@@ -1,0 +1,29 @@
+%h1
+    Please complete all signup fields below.
+= form_for(@user) do |f|
+    .user_signup_form
+        =f.label :first_name 
+        <br/>
+        =f.text_field :first_name
+        <br/>
+        =f.label :last_name 
+        <br/>
+        =f.text_field :last_name
+        <br/>
+        =f.label :email 
+        <br/>
+        =f.text_field :email
+        <br/>
+        =f.label :password 
+        <br/>
+        =f.password_field :password
+        <br/>
+        =f.label :password_confirmation 
+        <br/>
+        =f.password_field :password_confirmation
+        <br/>
+        =f.submit "Create My Account"
+
+%h3
+    
+    Existing User? Sign in.

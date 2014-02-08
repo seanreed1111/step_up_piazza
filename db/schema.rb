@@ -29,11 +29,13 @@ ActiveRecord::Schema.define(:version => 20140208185605) do
   end
 
   create_table "users", :force => true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
     t.string   "email"
     t.string   "password"
     t.string   "name"
     t.string   "city"
-    t.string   "type"
+    t.string   "user_type"
     t.string   "linkedin_url"
     t.text     "profile"
     t.integer  "grad_year"

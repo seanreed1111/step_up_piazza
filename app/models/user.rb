@@ -10,10 +10,11 @@ class User < ActiveRecord::Base
     has_many :city
     has_many :friends, class_name: "User", foreign_key: "user_id"
 
-    attr_accessible :email, 
-                    :password, 
-                    :first_name, 
+    attr_accessible :first_name, 
                     :last_name, 
+                    :email, 
+                    :password,
+                    :password_confirmation,
                     :city, 
                     :user_type,
                     :linkedin_url, 

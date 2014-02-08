@@ -1,6 +1,8 @@
 class CreateUsers < ActiveRecord::Migration
     def change
         create_table :users do |t|
+        t.string :first_name
+        t.string :last_name
         t.string :email
         t.string :password
         t.string :name
@@ -13,7 +15,3 @@ class CreateUsers < ActiveRecord::Migration
     end
   end
 end
-
-  # attr_accessible :email, :password, :name, :city, :type, 
-  #                   :linkedin_url, :profile, :work_interests 
-  #                  :grad_year

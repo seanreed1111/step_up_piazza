@@ -1,10 +1,10 @@
 class User < ActiveRecord::Base
-#city is two letter choice. More than one allowed!
-#type is mentor, mentee, or staff
-#profile is a text area
-#grad_year is for HS. can be null if mentors don't want to enter
-#work_interests covers the larger set categories such as
-# Business, Science, etc. User will have drop down menu
+    #city is two letter choice. More than one allowed!
+    #type is mentor, mentee, or staff
+    #profile is a text area
+    #grad_year is for HS. can be null if mentors don't want to enter
+    #work_interests covers the larger set categories such as
+    # Business, Science, etc. User will have drop down menu
 
     has_many :work_interests
     has_many :city
@@ -14,7 +14,8 @@ class User < ActiveRecord::Base
                     :password, 
                     :first_name, 
                     :last_name, 
-                    :city, :type,
+                    :city, 
+                    :user_type,
                     :linkedin_url, 
                     :profile, 
                     :work_interests, 

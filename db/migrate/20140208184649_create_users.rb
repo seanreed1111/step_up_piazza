@@ -5,8 +5,7 @@ class CreateUsers < ActiveRecord::Migration
         t.string :password
         t.string :name
         t.string :city
-        t.string :type
-        t.string :type
+        t.string :user_type
         t.string :linkedin_url
         t.text   :profile
         t.integer :grad_year
